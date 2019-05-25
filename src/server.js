@@ -37,5 +37,5 @@ app.use(require('./routes'));
 /*app.use('/teste', (req, res) => {
     return res.send('Hello World!!!');
 }); */
-server.listen(3333);
+server.listen(process.env.PORT || 3333);
 
