@@ -12,6 +12,7 @@ class BoxController {
             options: { sort: { createdAt: -1}}
         });
     
+        req.io.emit('file', box);
         return res.json(box);
     }
 }
